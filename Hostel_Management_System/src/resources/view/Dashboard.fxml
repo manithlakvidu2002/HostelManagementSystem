@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="710.0" prefWidth="1371.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hms.controller.DashboardController">
+   <children>
+      <ImageView fitHeight="779.0" fitWidth="1550.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Login.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="50.0" layoutY="50.0" onAction="#btnBackOnAction" prefHeight="25.0" prefWidth="25.0" ripplerFill="#0d009a" style="-fx-background-radius: 50;" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <effect>
+            <DropShadow color="#00000080" height="14.78" offsetX="8.0" offsetY="8.0" radius="12.525" width="37.32" />
+         </effect>
+         <font>
+            <Font name="Calibri Bold" size="1.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/BackBtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <AnchorPane layoutX="339.0" layoutY="283.0" prefHeight="252.0" prefWidth="197.0" style="-fx-background-color: ffffff; -fx-background-radius: 20;">
+         <children>
+            <ImageView fitHeight="182.0" fitWidth="185.0" layoutX="6.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons-01.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="22.0" layoutY="169.0" onAction="#btnStudentClickOnAction" prefHeight="50.0" prefWidth="150.0" ripplerFill="#0d009a" style="-fx-background-color: #003E9E; -fx-background-radius: 15;" text="Student" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow color="#00000080" height="14.78" offsetX="8.0" offsetY="8.0" radius="12.525" width="37.32" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="592.0" layoutY="284.0" prefHeight="252.0" prefWidth="197.0" style="-fx-background-color: ffffff; -fx-background-radius: 20;">
+         <children>
+            <ImageView fitHeight="153.0" fitWidth="165.0" layoutX="23.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons-02.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="23.0" layoutY="170.0" onAction="#btnRoomsClickOnAction" prefHeight="50.0" prefWidth="150.0" ripplerFill="#0d009a" style="-fx-background-color: #003E9E; -fx-background-radius: 15;" text="Rooms" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow color="#00000080" height="14.78" offsetX="8.0" offsetY="8.0" radius="12.525" width="37.32" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="842.0" layoutY="286.0" prefHeight="252.0" prefWidth="197.0" style="-fx-background-color: ffffff; -fx-background-radius: 20;">
+         <children>
+            <ImageView fitHeight="153.0" fitWidth="165.0" layoutX="23.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons-03.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="22.0" layoutY="169.0" onAction="#btnReservationClickOnAction" prefHeight="50.0" prefWidth="150.0" ripplerFill="#0d009a" style="-fx-background-color: #003E9E; -fx-background-radius: 15;" text="Reservation" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow color="#00000080" height="14.78" offsetX="8.0" offsetY="8.0" radius="12.525" width="37.32" />
+         </effect>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="1290.0" layoutY="50.0" onAction="#btnSettingsClickOnAction" prefHeight="25.0" prefWidth="25.0" ripplerFill="#0d009a" style="-fx-background-radius: 50;" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <effect>
+            <DropShadow color="#00000080" height="14.78" offsetX="8.0" offsetY="8.0" radius="12.525" width="37.32" />
+         </effect>
+         <font>
+            <Font name="Calibri Bold" size="1.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Settings.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fitHeight="127.0" fitWidth="274.0" layoutX="550.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
