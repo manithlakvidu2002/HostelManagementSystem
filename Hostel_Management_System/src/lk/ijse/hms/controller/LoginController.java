@@ -46,7 +46,7 @@ public class LoginController {
 
     @FXML
     void forgotClickOnAction(ActionEvent event) {
-        new Alert(Alert.AlertType.INFORMATION,"Please contact Developer !\n0773572070").show();
+        new Alert(Alert.AlertType.INFORMATION,"Please contact Developer !\n0783496963").show();
     }
 
     public void initialize(){
