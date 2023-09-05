@@ -19,6 +19,7 @@ import lk.ijse.hms.bo.BOFactory;
 import lk.ijse.hms.bo.custom.RoomsBO;
 import lk.ijse.hms.bo.custom.UserBO;
 import lk.ijse.hms.dto.UserDTO;
+import lk.ijse.hms.entity.User;
 import lk.ijse.hms.util.Navigation;
 import lk.ijse.hms.util.Routes;
 
@@ -76,47 +77,28 @@ public class LoginController {
 
     @FXML
     void loginClickOnAction(ActionEvent event) throws IOException {
-        Shake shakeUserName = new Shake(txtUserName);
-        Shake shakePassword = new Shake(txtPassword);
+        if(!txtUserName.getText().isEmpty() && !txtPassword.getText().isEmpty()) {
+            String id = txtUserName.getText();
+            String pass = txtPassword.getText();
 
-        if( isCorrectPassword() && isCorrectUserName()){
-            txtUserName.setFocusColor(Paint.valueOf("BLUE"));
-            Navigation.navigate(Routes.DASHBOARD, pane);
-            new FadeIn(pane).setSpeed(3).play();
+            User userDTO= userBO.getUser(id);
+            if(userDTO != null){
+                String usPass = userDTO.getPassword();
+                if (usPass.equals(pass)){
+                    Navigation.navigate(Routes.DASHBOARD, pane);
+                }else{
+                    new Alert(Alert.AlertType.ERROR, "Wrong password!").show();
+                }
+            }else{
+                new Alert(Alert.AlertType.ERROR, "User ID not found!").show();
+            }
 
-        }else if (isCorrectPassword() && !isCorrectUserName()) {
-            txtUserName.requestFocus();
-            txtUserName.setFocusColor(Paint.valueOf("RED"));
-            shakeUserName.play();
-        } else if (!isCorrectPassword() && isCorrectUserName()) {
-            txtPassword.requestFocus();
-            txtPassword.setFocusColor(Paint.valueOf("RED"));
-            shakePassword.play();
-        } else{
-            new Alert(Alert.AlertType.ERROR,"Try again !").show();
-            txtPassword.clear();
-            txtUserName.clear();
+        }else {
+            new Alert(Alert.AlertType.ERROR, "Please Fill Details!").show();
         }
     }
 
-    private boolean isCorrectUserName() {
-        String user = userBO.getUser("1");
-        if(user == null){
-            new Alert(Alert.AlertType.ERROR," Database Error !").show();
-            return false;
-        }
-        return txtUserName.getText().equals(user);
+    public void createClickOnAction(ActionEvent actionEvent) throws IOException {
+        Navigation.navigate(Routes.CREATE_USER_ACC, pane);
     }
-
-    private boolean isCorrectPassword() {
-        String password = userBO.getPassword("1");
-        System.out.println(password);
-        if(password == null){
-            new Alert(Alert.AlertType.ERROR," Database Error !").show();
-            return false;
-        }
-        return txtPassword.getText().equals(password);
-    }
-
-
 }

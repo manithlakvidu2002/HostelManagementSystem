@@ -19,11 +19,11 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="pane" prefHeight="710.0" prefWidth="1371.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hms.controller.ReservationController">
+<AnchorPane fx:id="pane" prefHeight="779.0" prefWidth="1371.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hms.controller.ReservationController">
    <children>
-      <ImageView fitHeight="779.0" fitWidth="1550.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="779.0" fitWidth="1374.0" pickOnBounds="true">
          <image>
-            <Image url="@../img/Login.jpg" />
+            <Image url="@../img/WhatsApp%20Image%202023-09-05%20at%2019.18.17.jpg" />
          </image>
       </ImageView>
       <AnchorPane fx:id="reservationDetailsPane" layoutX="100.0" layoutY="131.0" prefHeight="277.0" prefWidth="1168.0" style="-fx-background-color: ffffff; -fx-background-radius: 5;">
@@ -99,9 +99,9 @@
             </AnchorPane>
          </children>
       </AnchorPane>
-      <Label layoutX="583.0" layoutY="88.0" prefHeight="41.0" prefWidth="183.0" style="-fx-text-fill: ffffff;" text="Reservation">
+      <Label layoutX="583.0" layoutY="56.0" prefHeight="46.0" prefWidth="213.0" style="-fx-text-fill: ffffff;" text="Reservation">
          <font>
-            <Font name="Calibri Bold" size="36.0" />
+            <Font name="Calibri Bold" size="40.0" />
          </font>
       </Label>
       <JFXButton buttonType="RAISED" layoutX="50.0" layoutY="50.0" onAction="#btnBackOnAction" prefHeight="25.0" prefWidth="25.0" ripplerFill="#0d009a" style="-fx-background-radius: 50;" textAlignment="CENTER" textFill="WHITE" wrapText="true">

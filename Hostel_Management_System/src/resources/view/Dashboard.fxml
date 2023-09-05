@@ -7,12 +7,13 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="pane" prefHeight="710.0" prefWidth="1371.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hms.controller.DashboardController">
+<AnchorPane fx:id="pane" prefHeight="779.0" prefWidth="1371.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hms.controller.DashboardController">
    <children>
-      <ImageView fitHeight="779.0" fitWidth="1550.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="779.0" fitWidth="1371.0" pickOnBounds="true">
          <image>
-            <Image url="@../img/Login.jpg" />
+            <Image url="@../img/WhatsApp%20Image%202023-09-05%20at%2019.18.17.jpg" />
          </image>
       </ImageView>
       <JFXButton buttonType="RAISED" layoutX="50.0" layoutY="50.0" onAction="#btnBackOnAction" prefHeight="25.0" prefWidth="25.0" ripplerFill="#0d009a" style="-fx-background-radius: 50;" textAlignment="CENTER" textFill="WHITE" wrapText="true">
@@ -111,10 +112,18 @@
             </ImageView>
          </graphic>
       </JFXButton>
-      <ImageView fitHeight="127.0" fitWidth="274.0" layoutX="550.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/logo.png" />
-         </image>
-      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="1116.0" layoutY="39.0" onAction="#ChangePasswordOnAction" prefHeight="50.0" prefWidth="164.0" ripplerFill="#0d009a" style="-fx-background-color: #003E9E; -fx-background-radius: 15;" text="Change Password" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text fill="WHITE" layoutX="584.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" wrappingWidth="260.80340576171875">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

@@ -6,5 +6,6 @@ public enum Routes {
     STUDENT,
     ROOMS,
     RESERVATION,
-    CHANGE_PASSWORD
+    CHANGE_PASSWORD,
+    CREATE_USER_ACC
 }

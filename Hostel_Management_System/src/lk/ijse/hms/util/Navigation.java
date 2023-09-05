@@ -41,6 +41,10 @@ public class Navigation {
                 window.setTitle("24D Hostel Management System | Change Password");
                 initUI("ChangePassword.fxml");
                 break;
+            case CREATE_USER_ACC:
+                window.setTitle("24D Hostel Management System | Create User Account");
+                initUI("CreatePassword.fxml");
+                break;
             default:
                 new Alert(Alert.AlertType.ERROR, "UI Not Found!").show();
         }

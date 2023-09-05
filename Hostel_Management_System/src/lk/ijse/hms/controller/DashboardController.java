@@ -29,4 +29,8 @@ public class DashboardController {
     public void btnSettingsClickOnAction(ActionEvent actionEvent) throws IOException {
         Navigation.navigate(Routes.CHANGE_PASSWORD,pane);
     }
+
+    public void ChangePasswordOnAction(ActionEvent actionEvent) throws IOException {
+        Navigation.navigate(Routes.CHANGE_PASSWORD,pane);
+    }
 }
