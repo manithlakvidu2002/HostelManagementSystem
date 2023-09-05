@@ -135,7 +135,7 @@ public class RoomsController {
             String keyMoneyText = txtKeyMoney.getText();
             int qtyText = Integer.parseInt(txtQty.getText());
 
-            if (isValidRoomTypeID() && isValidType() && isValidKeyMoney() && isValidQTY()) {
+            if (isValidType() && isValidKeyMoney() && isValidQTY()) {
                 if (btnSave.getText().equals("Save")) {
                     RoomsDTO roomsDTO = new RoomsDTO(roomTypeIDText, typeText, keyMoneyText, qtyText);
                     Boolean isAdded = roomsBO.addRoom(roomsDTO);
